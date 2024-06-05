@@ -1,0 +1,7 @@
+.element__image {
+    overflow: hidden;
+    object-fit: cover;
+    width: 282px;
+    aspect-ratio: 1/1;
+    border-radius: 10px 10px 0 0;
+}

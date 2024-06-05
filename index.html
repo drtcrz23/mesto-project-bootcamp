@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="pages/index.css">
+</head>
+<body class="page">
+<header class="header">
+    <img class="header__logo" src="/images/logo.svg" alt="логотип">
+</header>
+<main>
+    <section class="profile">
+        <div class="profile__container">
+            <img class="profile__avatar" src="images/profile-avatar.jpg" alt="фотография профиля">
+            <div class="profile__profile-info">
+                <h1 class="profile__name">Жак-Ив Кусто</h1>
+                <button class="profile__button-edit" type="button">
+                    <img class="profile__button-edit-image" src="images/edit.svg" alt="добавление">
+                </button>
+                <p class="profile__description">Исследователь океана</p>
+            </div>
+        </div>
+        <button class="profile__button-add" type="button">
+            <img class="profile__button-add-image" src="images/add.svg" alt="добавление">
+        </button>
+    </section>
+
+    <section class="elements">
+        <div class="element">
+            <img class="element__image" src="images/Moscow.jpg" alt="Element photo">
+            <div class="element__group">
+                <p class="element__title">Москва</p>
+                <button type="button" class="element__like"></button>
+            </div>
+        </div>
+        <div class="element">
+            <img class="element__image" src="images/Saint_Peterburg.jpg" alt="Element photo">
+            <div class="element__group">
+                <p class="element__title">Санкт-Петербург</p>
+                <button type="button" class="element__like"></button>
+            </div>
+        </div>
+        <div class="element">
+            <img class="element__image" src="images/N-N.jpg" alt="Element photo">
+            <div class="element__group">
+                <p class="element__title">Нижний Новгород</p>
+                <button type="button" class="element__like"></button>
+            </div>
+        </div>
+        <div class="element">
+            <img class="element__image" src="images/Adler.jpg" alt="Element photo">
+            <div class="element__group">
+                <p class="element__title">Адлер</p>
+                <button type="button" class="element__like"></button>
+            </div>
+        </div>
+        <div class="element">
+            <img class="element__image" src="images/Kirov.jpg" alt="Element photo">
+            <div class="element__group">
+                <p class="element__title">Киров</p>
+                <button type="button" class="element__like"></button>
+            </div>
+        </div>
+        <div class="element">
+            <img class="element__image" src="images/EKB.jpg" alt="Element photo">
+            <div class="element__group">
+                <p class="element__title">Екатеринбург</p>
+                <button type="button" class="element__like"></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="popup-edit popup-edit__opened">
+        <div class="popup-edit__container">
+            <h3 class="popup-edit__title">Редактировать профиль</h3>
+            <img class="popup-edit__close" src="images/close.svg" alt="закрыть">
+            <form>
+                <input class="popup-edit__input" type="text" name="name" placeholder="Жак-Ив Кусто" required>
+                <input class="popup-edit__input" type="text" name="description" placeholder="Исследователь океана" required>
+                <button class="popup-edit__submit" type="submit">Сохранить</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p class="footer__text">&copy; 2024 Mesto Russia</p>
+</footer>
+</body>
+</html>
