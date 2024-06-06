@@ -4,7 +4,7 @@
     margin: 0 auto 66px;
     display: grid;
     grid-template-rows: repeat(2, auto);
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, max-content);
     row-gap: 20px;
     column-gap: 17px;
 }

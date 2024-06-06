@@ -1,12 +1,11 @@
 .element__like {
-    background-image: url("../../../images/like.svg");
-    background-color: rgba(0,0,0, .0);
-    background-repeat: no-repeat;
+    margin: auto 5px auto 0;
+    padding: 0;
+    color: black;
     width: 22px;
     height: 19px;
     border: none;
-    margin-right: 5px;
-    align-self: center;
+    background-color: white;
     cursor: pointer;
 }
 

@@ -1,0 +1,18 @@
+.popup-image__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: relative;
+    box-sizing: border-box;
+    max-width: 80vw;
+    max-height: 80vh;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 320px) {
+    .popup-image__container {
+        width: calc(100% - 80px);
+    }
+}
