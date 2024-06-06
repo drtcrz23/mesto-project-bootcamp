@@ -1,13 +1,14 @@
 .profile__description {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
     margin: 0;
     font-family: 'Inter', ‘Arial’, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 21.78px;
     text-align: left;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    max-width: 294px;
 }
 
 @media screen and (max-width: 320px) {

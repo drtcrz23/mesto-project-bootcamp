@@ -1,15 +1,17 @@
 .popup-edit__container {
-    padding-top: 34px;
-    width: calc(100% - 38px);
     max-width: 430px;
+    width: 100%;
+    min-height: 330px;
     border-radius: 10px;
     background-color: white;
     margin: auto;
     position: relative;
+    align-items: center;
 }
 
 @media screen and (max-width: 320px) {
     .popup-edit__container {
-        padding-top: 25px;
+        max-width: 282px;
+        min-height: 322px;
     }
 }
