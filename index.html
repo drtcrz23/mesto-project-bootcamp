@@ -8,7 +8,7 @@
 </head>
 <body class="page">
 <header class="header">
-    <img class="header__logo" src="/images/logo.svg" alt="логотип">
+    <img class="header__logo" src="./images/logo.svg" alt="логотип">
 </header>
 <main>
     <section class="profile">
@@ -29,54 +29,54 @@
 
     <section class="elements">
         <div class="element">
-            <img class="element__image" src="images/Moscow.jpg" alt="Element photo">
+            <img class="element__image" src="images/Moscow.jpg" alt="Москва">
             <div class="element__group">
-                <p class="element__title">Москва</p>
+                <h2 class="element__title">Москва</h2>
                 <button type="button" class="element__like"></button>
             </div>
         </div>
         <div class="element">
-            <img class="element__image" src="images/Saint_Peterburg.jpg" alt="Element photo">
+            <img class="element__image" src="images/Saint_Peterburg.jpg" alt="Санкт-Петербург">
             <div class="element__group">
-                <p class="element__title">Санкт-Петербург</p>
+                <h2 class="element__title">Санкт-Петербург</h2>
                 <button type="button" class="element__like"></button>
             </div>
         </div>
         <div class="element">
-            <img class="element__image" src="images/N-N.jpg" alt="Element photo">
+            <img class="element__image" src="images/N-N.jpg" alt="Нижний Новгород">
             <div class="element__group">
-                <p class="element__title">Нижний Новгород</p>
+                <h2 class="element__title">Нижний Новгород</h2>
                 <button type="button" class="element__like"></button>
             </div>
         </div>
         <div class="element">
-            <img class="element__image" src="images/Adler.jpg" alt="Element photo">
+            <img class="element__image" src="images/Adler.jpg" alt="Адлер">
             <div class="element__group">
-                <p class="element__title">Адлер</p>
+                <h2 class="element__title">Адлер</h2>
                 <button type="button" class="element__like"></button>
             </div>
         </div>
         <div class="element">
-            <img class="element__image" src="images/Kirov.jpg" alt="Element photo">
+            <img class="element__image" src="images/Kirov.jpg" alt="Киров">
             <div class="element__group">
-                <p class="element__title">Киров</p>
+                <h2 class="element__title">Киров</h2>
                 <button type="button" class="element__like"></button>
             </div>
         </div>
         <div class="element">
-            <img class="element__image" src="images/EKB.jpg" alt="Element photo">
+            <img class="element__image" src="images/EKB.jpg" alt="Екатеринбург">
             <div class="element__group">
-                <p class="element__title">Екатеринбург</p>
+                <h2 class="element__title">Екатеринбург</h2>
                 <button type="button" class="element__like"></button>
             </div>
         </div>
     </section>
 
-    <section class="popup-edit popup-edit__opened">
+    <section class="popup-edit popup-edit_opened">
         <div class="popup-edit__container">
             <h3 class="popup-edit__title">Редактировать профиль</h3>
-            <img class="popup-edit__close" src="images/close.svg" alt="закрыть">
-            <form>
+            <button class="popup-edit__close"></button>
+            <form name="edit-profile">
                 <input class="popup-edit__input" type="text" name="name" placeholder="Жак-Ив Кусто" required>
                 <input class="popup-edit__input" type="text" name="description" placeholder="Исследователь океана" required>
                 <button class="popup-edit__submit" type="submit">Сохранить</button>

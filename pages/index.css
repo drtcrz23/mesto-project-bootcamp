@@ -1,5 +1,7 @@
 @import url(../blocks/page/page.css);
 
+@import url(../vendor/fonts.css);
+
 @import url(../blocks/element/__image/element__image.css);
 
 @import url(../blocks/header/header.css);
@@ -33,4 +35,4 @@
 @import url(../blocks/popup-edit/__title/popup-edit__title.css);
 @import url(../blocks/popup-edit/__submit/popup-edit__submit.css);
 @import url(../blocks/popup-edit/__close/popup-edit__close.css);
-@import url(../blocks/popup-edit/__opened/popup-edit__orened.css);
+@import url(../blocks/popup-edit/_opened/popup-edit_orened.css);
