@@ -97,6 +97,13 @@ popupEditForm.addEventListener('submit', function (event) {
     closeEditPopup();
 });
 
+function closeImagePopup() {
+    imagePopup.classList.remove('popup-image_opened');
+}
+closeButtonImage.addEventListener('click', () => {
+    closeImagePopup();
+});
+
 //ПРОСМОТР КАРТОЧЕК
 
 function createCard(name, url) {
@@ -135,10 +142,3 @@ function addCards() {
 }
 
 addCards();
-
-function closeImagePopup() {
-    imagePopup.classList.remove('popup-image_opened');
-}
-closeButtonImage.addEventListener('click', () => {
-    closeImagePopup();
-});
