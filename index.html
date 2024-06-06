@@ -28,6 +28,17 @@
     </section>
 
     <section class="elements">
+        <template id="element-template">
+            <div class="element">
+                <div class="element__group">
+                    <h2 class="element__title"></h2>
+                    <button class="element__like" type="button"></button>
+                </div>
+                <div class="element__image">
+                    <button class="element__button-delete" type="button"></button>
+                </div>
+            </div>
+        </template>
         <div class="element">
             <img class="element__image" src="images/Moscow.jpg" alt="Element photo">
             <div class="element__group">
@@ -72,15 +83,35 @@
         </div>
     </section>
 
-    <section class="popup-edit popup-edit__opened">
+    <section class="popup-add popup">
+        <div class="popup-add__container">
+            <h3 class="popup-add__title">Новое место</h3>
+            <img class="popup-add__close" src="images/close.svg" alt="закрыть">
+            <form class="popup-add__form">
+                <input class="popup-add__input" type="text" name="name" placeholder="Название" required>
+                <input class="popup-add__input" type="text" name="description" placeholder="Ссылка на картинку" required>
+                <button class="popup-add__submit" type="submit">Создать</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="popup-edit popup">
         <div class="popup-edit__container">
             <h3 class="popup-edit__title">Редактировать профиль</h3>
             <img class="popup-edit__close" src="images/close.svg" alt="закрыть">
-            <form>
+            <form class="popup-edit__form">
                 <input class="popup-edit__input" type="text" name="name" placeholder="Жак-Ив Кусто" required>
                 <input class="popup-edit__input" type="text" name="description" placeholder="Исследователь океана" required>
                 <button class="popup-edit__submit" type="submit">Сохранить</button>
             </form>
+        </div>
+    </section>
+
+    <section class='popup-image'>
+        <div class='popup-image__content'>
+            <img  class="popup-edit__close" src="images/close.svg" alt="закрыть">
+            <img src='' alt='изображение' class="popup-image__image">
+            <span class="popup-image__text"></span>
         </div>
     </section>
 </main>
@@ -88,5 +119,7 @@
 <footer class="footer">
     <p class="footer__text">&copy; 2024 Mesto Russia</p>
 </footer>
+
+<script src='index.js'></script>
 </body>
 </html>

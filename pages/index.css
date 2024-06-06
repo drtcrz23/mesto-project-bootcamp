@@ -34,3 +34,14 @@
 @import url(../blocks/popup-edit/__submit/popup-edit__submit.css);
 @import url(../blocks/popup-edit/__close/popup-edit__close.css);
 @import url(../blocks/popup-edit/__opened/popup-edit__orened.css);
+
+@import url(../blocks/popup-add/popup-add.css);
+@import url(../blocks/popup-add/__container/popup-add__container.css);
+@import url(../blocks/popup-add/__input/popup-add__input.css);
+@import url(../blocks/popup-add/__title/popup-add__title.css);
+@import url(../blocks/popup-add/__submit/popup-add__submit.css);
+@import url(../blocks/popup-add/__close/popup-add__close.css);
+@import url(../blocks/popup-add/__opened/popup-add__opened.css);
+
+@import url(../blocks/element/__button-delete/element__button-delete.css);
+@import url(../blocks/element/__like/_active/element__like_active.css);
