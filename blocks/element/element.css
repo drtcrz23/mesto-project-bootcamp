@@ -1,0 +1,9 @@
+.element {
+    width: 282px;
+    min-height: 361px;
+    background-color: white;
+    display: grid;
+    border-radius: 10px 10px 10px 10px;
+    grid-template-areas: "container"
+                         "info";
+}

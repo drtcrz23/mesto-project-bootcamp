@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="pages/index.css">
+</head>
+<body class="page">
+<header class="header">
+    <img class="header__logo" src="./images/logo.svg" alt="логотип">
+</header>
+<main>
+    <section class="profile">
+        <div class="profile__container">
+            <img class="profile__avatar" src="images/profile-avatar.jpg" alt="фотография профиля">
+            <div class="profile__profile-info">
+                <h1 class="profile__name">Жак-Ив Кусто</h1>
+                <button class="profile__button-edit" type="button">
+                    <img class="profile__button-edit-image" src="images/edit.svg" alt="добавление">
+                </button>
+                <p class="profile__description">Исследователь океана</p>
+            </div>
+        </div>
+        <button class="profile__button-add" type="button">
+            <img class="profile__button-add-image" src="images/add.svg" alt="добавление">
+        </button>
+    </section>
+
+    <section class="elements">
+        <template id="element-template">
+            <div class="element">
+                <div class="element__container" style="position: relative">
+                    <img class="element__image" src="" alt="Element photo">
+                    <button type="button" class="element__button-delete">
+                        <img src="images/Trash.svg" alt="удалить" class="element__button-delete-image">
+                    </button>
+                </div>
+                <div class="element__group">
+                    <p class="element__title"></p>
+                    <button type="button" class="element__like">
+                        <img src="images/like.svg" alt="лайк" class="element__like-image">
+                    </button>
+                </div>
+            </div>
+        </template>
+    </section>
+
+    <section class="popup popup-add">
+        <div class="popup__container">
+            <h3 class="popup__title">Новое место</h3>
+            <button class="popup__close popup__close_add">
+                <img src="images/close.svg" alt="закрыть" class="popup__close-image">
+            </button>
+            <form class="popup-add__form" name="add-card">
+                <input class="popup__input" type="text" name="name" placeholder="Название" required>
+                <input class="popup__input" type="text" name="link" placeholder="Ссылка на картинку" required>
+                <button class="popup__submit" type="submit">Создать</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="popup popup-edit">
+        <div class="popup__container">
+            <h3 class="popup__title">Редактировать профиль</h3>
+            <button class="popup__close popup__close_edit" type="button">
+                <img src="images/close.svg" alt="закрыть" class="popup__close-image">
+            </button>
+            <form class="popup-edit__form" name="edit-profile">
+                <input class="popup__input" type="text" name="name" placeholder="Жак-Ив Кусто" required>
+                <input class="popup__input" type="text" name="description" placeholder="Исследователь океана" required>
+                <button class="popup__submit" type="submit">Сохранить</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="popup popup-image">
+        <div class="popup-image__container">
+            <button class="popup__close popup__close_image popup-image__close" type="button">
+                <img src="images/close.svg" alt="закрыть" class="popup__close-image">
+            </button>
+            <img class="popup-image__image" src="" alt="картинка">
+            <span class="popup-image__text">rasdvzxbc</span>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p class="footer__text">&copy; 2024 Mesto Russia</p>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
